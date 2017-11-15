@@ -6,5 +6,6 @@ notifications:
 script:   
 - cmake -H. -B_build
 - cmake --build _build
-- _build/explorer explorer/file_01.dat explorer/file_02.dat explorer/file_04.dat
+- mkdir -p artifacts && cd artifacts
+- ../_build/explorer ../explorer/file_01.dat
 - cat log.txt
